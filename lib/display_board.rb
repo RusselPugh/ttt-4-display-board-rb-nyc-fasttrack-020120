@@ -19,4 +19,3 @@ display_board(turn_2)
 turn_2[1] = "0"
 
 display_board(turn_3)
-
