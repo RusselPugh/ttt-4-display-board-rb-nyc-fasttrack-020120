@@ -1,21 +1,29 @@
 # Define display_board that accepts a board and prints
 # out the current state.
-turn_1 = ["X", " ", " ", " ", " ", " ", " ", " ", " ",]
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
 
-def display_board(the_board)
-  puts " #{the_board[0]} | #{the_board[1]} | #{the_board[2]} "
+def display_board(board)
+  puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
-  puts " #{the_board[3]} | #{the_board[4]} | #{the_board[5]} "
+  puts " #{board[3]} | #{board[4]} | #{board[5]} "
   puts "-----------"
-  puts " #{the_board[6]} | #{the_board[7]} | #{the_board[8]} "
+  puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-display_board(turn_1)
+display_board(board)
 
-turn_2 = ["X", " ", " ", " ", "O", " ", " ", " ", " ",]
+board = [" ", " ", " ", " ", "O", " ", " ", " ", " ",]
 
-display_board(turn_2)
+display_board(board)
 
-turn_2[1] = "0"
+board = ["X", "X", "X", " ", " ", " ", " ", " ", " ",]
 
-display_board(turn_3)
+display_board(board)
+
+board = ["O", "X", " ", " ", "X", " ", "X", "O", " ",]
+
+display_board(board)
+
+board = ["O", "O", "O", "O", "O", "O", "O", "O", "O",]
+
+display_board(board)
